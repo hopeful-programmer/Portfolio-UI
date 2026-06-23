@@ -9,10 +9,10 @@ export default function AwardCard({ award, index = 0, className = "" }) {
   return (
     <article
       className={`glass-card glow-hover group flex flex-col items-center overflow-hidden
-        text-center transition-all duration-400 ease-out hover:-translate-y-1 ${className}`}
+        text-center ${className}`}
       style={{ animationDelay: `${index * 0.1}s` }}
     >
-      <div className="flex flex-col items-center p-6">
+      <div className="flex flex-col items-center p-6 transition-transform duration-300 ease-out group-hover:-translate-y-1">
         {/* Icon */}
         <div
           className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl

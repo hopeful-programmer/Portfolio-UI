@@ -5,16 +5,16 @@ import { ChevronDown, FolderOpen, Sparkles, Check, ExternalLink, Play } from "lu
 export default function ProjectCard({ project, index = 0 }) {
   const { t, lang } = useLanguage();
   const [expanded, setExpanded] = useState(false);
-  const { title, summary, summaryAr, description, descriptionAr, technologies, features, demoUrl, demoType } = project;
+  const { title, summary, summaryAr, description, descriptionAr, technologies, features, featuresAr, demoUrl, demoType } = project;
   const loc = (en, ar) => lang === "ar" ? (ar ?? en) : en;
 
   return (
     <article
-      className="glass-card glow-hover group flex flex-col self-start overflow-hidden
-        transition-all duration-400 ease-out hover:-translate-y-1"
+      className="glass-card glow-hover group flex flex-col self-start overflow-hidden"
       style={{ animationDelay: `${index * 0.1}s` }}
       id={`project-card-${index}`}
     >
+      <div className="flex flex-col transition-transform duration-300 ease-out group-hover:-translate-y-1">
       {/* Card Header */}
       <div className="p-6 pb-4">
         <div className="mb-4 flex items-center gap-3">
@@ -63,7 +63,7 @@ export default function ProjectCard({ project, index = 0 }) {
 
               <div className="rounded-xl border border-[var(--accent)]/10 bg-[var(--accent)]/[0.03] p-4">
                 <ul className="flex flex-col gap-3 px-3 py-3">
-                  {features.map((feature, i) => (
+                  {(loc(features, featuresAr) ?? features).map((feature, i) => (
                     <li
                       key={i}
                       className="group/feat flex items-start gap-2.5 rounded-lg px-2 py-1.5
@@ -148,6 +148,7 @@ export default function ProjectCard({ project, index = 0 }) {
             </a>
           )}
         </div>
+      </div>
       </div>
     </article>
   );

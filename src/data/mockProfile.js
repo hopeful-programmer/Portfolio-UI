@@ -3,15 +3,13 @@
  * Used as fallback when the API is unavailable.
  * Keep this in sync with PortfolioDbSeeder.cs.
  */
-import profileAvatar from "../assets/profile_avatar2.png";
-
 // Default fallback avatar — exported so App.jsx can use it too
-export const defaultAvatar = profileAvatar;
+export const defaultAvatar = "/images/luai_personal_image.png";
 
 const mockProfile = {
   fullName: "Luai Alsakkaf",
   jobTitle: "Full-Stack .NET Developer",
-  profileImageUrl: null,
+  profileImageUrl: "/images/luai_personal_image.png",
   summary:
     "Final-year CS student (GPA: 3.95/4.00) building production software before graduating. Currently the sole developer on a live enterprise course registration system at the Yanbu Chamber of Commerce — a full-stack platform built with ASP.NET Core 10, React, and SQL Server that replaced entirely manual enrollment workflows. I apply clean architecture, SOLID principles, Domain-Driven Design, and OWASP security guidelines as defaults, not afterthoughts.",
   summaryAr:
@@ -64,6 +62,12 @@ const mockProfile = {
         "Automated event-driven email notifications via n8n workflow automation, triggered by enrollment and course lifecycle events.",
         "RESTful API with Laravel Sanctum token authentication and Eloquent ORM for a clean, normalized data layer.",
       ],
+      featuresAr: [
+        "مساعد تعليمي ذكي مدعوم بـ Gemini API، يساعد المستخدمين على استيعاب المحتوى والحصول على إجابات فورية.",
+        "واجهة ثنائية اللغة مع تبديل سلس لاتجاه النص RTL، وخط مريح لذوي عسر القراءة (Dyslexia)، ودعم كامل للوضعين الفاتح والداكن.",
+        "إشعارات بريد إلكتروني تلقائية عبر n8n، مرتبطة بأحداث التسجيل ودورة حياة المقرر دون أي تدخل يدوي.",
+        "RESTful API محمية بـ Laravel Sanctum، وقاعدة بيانات منظمة وفق معايير التسوية (Normalization) باستخدام Eloquent ORM.",
+      ],
     },
     {
       title: "Multi-Factor Biometric Attendance System",
@@ -82,6 +86,11 @@ const mockProfile = {
         "Real-time facial recognition using OpenCV and the face_recognition library as the primary identity factor.",
         "Voice-based speaker verification via Picovoice SDK as a secondary factor, defeating simple face-spoofing attacks.",
         "MySQL backend with a database-level attendance cooldown trigger to prevent duplicate check-in entries.",
+      ],
+      featuresAr: [
+        "تعرف على الوجه في الوقت الفعلي باستخدام OpenCV ومكتبة face_recognition كعامل مصادقة أساسي.",
+        "التحقق من بصمة الصوت عبر Picovoice SDK كعامل ثانوي، يُغلق الباب أمام محاولات انتحال الهوية.",
+        "قاعدة بيانات MySQL مع Trigger على مستوى قاعدة البيانات يمنع تسجيل الحضور المكرر خلال فترة الـ Cooldown.",
       ],
     },
   ],
