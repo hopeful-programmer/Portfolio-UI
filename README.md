@@ -44,4 +44,4 @@ Deployed on [Vercel](https://vercel.com). Set `VITE_API_BASE` to your backend UR
 ## Related
 
 - **Backend API:** [Portfolio API](https://github.com/hopeful-programmer/Portfolio-API)
-- **Live Site:** [your-portfolio-url]
+- **Live Site:** [portfolio-ui-gamma-inky.vercel.app](https://portfolio-ui-gamma-inky.vercel.app)
