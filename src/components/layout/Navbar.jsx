@@ -92,13 +92,14 @@ export default function Navbar() {
           <button
             onClick={toggleTheme}
             className="inline-flex items-center justify-center rounded-lg border border-[var(--border)]
-              bg-[var(--glass)] p-2 text-[var(--text-secondary)]
+              bg-[var(--glass)] text-[var(--text-secondary)]
               transition-all duration-200
               hover:border-[var(--accent)] hover:text-[var(--text-primary)] cursor-pointer"
+            style={{ padding: "8px 10px" }}
             aria-label={theme === "dark" ? t("theme_switch_light") : t("theme_switch_dark")}
             id="theme-toggle-btn"
           >
-            {theme === "dark" ? <Sun size={18} /> : <Moon size={18} />}
+            {theme === "dark" ? <Sun size={20} /> : <Moon size={20} />}
           </button>
 
           <button
