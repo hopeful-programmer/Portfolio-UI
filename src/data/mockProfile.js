@@ -15,7 +15,7 @@ const mockProfile = {
   summaryAr:
     "أنا طالب في سنتي الأخيرة بتخصص علوم الحاسب (بمعدل 3.95/4.00)، وأعمل على بناء برمجيات حقيقية قبل التخرج. أعمل حالياً كمطور وحيد لنظام تسجيل دورات مؤسسي نشط في الغرفة التجارية بينبع؛ وهو منصة Full-Stack متكاملة مبنية باستخدام ASP.NET Core 10 و React و SQL Server، والتي استبدلت الإجراءات اليدوية بالكامل. أعتمد في عملي على تطبيق الـ Clean Architecture، ومبادئ SOLID، و Domain-Driven Design، بالإضافة إلى معايير أمان OWASP كركائز أساسية في مشاريعي.",
   email: "louialsakaf@gmail.com",
-  resumeUrl: "http://localhost:5117/documents/Luai_Alsakkaf_NET_Developer.pdf",
+  resumeUrl: "https://drive.google.com/file/d/1dgSZOLk-pky0wqHAGJIl1amDrOkl4iF0/view?usp=sharing",
   socialLinks: [
     {
       platformName: "LinkedIn",
