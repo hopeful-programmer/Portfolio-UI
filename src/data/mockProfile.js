@@ -11,9 +11,9 @@ const mockProfile = {
   jobTitle: "Full-Stack .NET Developer",
   profileImageUrl: "/images/luai_personal_image.png",
   summary:
-    "Final-year CS student (GPA: 3.95/4.00) building production software before graduating. Currently the sole developer on a live enterprise course registration system at the Yanbu Chamber of Commerce — a full-stack platform built with ASP.NET Core 10, React, and SQL Server that replaced entirely manual enrollment workflows. I apply clean architecture, SOLID principles, Domain-Driven Design, and OWASP security guidelines as defaults, not afterthoughts.",
+    "Full-Stack .NET Developer and final-year CS student (GPA: 3.95/4.00) with hands-on experience building production-grade web applications using ASP.NET Core 10, C#, Entity Framework Core, and SQL Server. Currently delivering a live enterprise course registration system at the Yanbu Chamber of Commerce, applying clean architecture, Domain-Driven Design, and a security-first approach across the full stack. Strong fundamentals in OOP, REST API design, SOLID Principles, and JWT authentication.",
   summaryAr:
-    "أنا طالب في سنتي الأخيرة بتخصص علوم الحاسب (بمعدل 3.95/4.00)، وأعمل على بناء برمجيات حقيقية قبل التخرج. أعمل حالياً كمطور وحيد لنظام تسجيل دورات مؤسسي نشط في الغرفة التجارية بينبع؛ وهو منصة Full-Stack متكاملة مبنية باستخدام ASP.NET Core 10 و React و SQL Server، والتي استبدلت الإجراءات اليدوية بالكامل. أعتمد في عملي على تطبيق الـ Clean Architecture، ومبادئ SOLID، و Domain-Driven Design، بالإضافة إلى معايير أمان OWASP كركائز أساسية في مشاريعي.",
+    "مطور Full-Stack بـ .NET وطالب في سنتي الأخيرة بتخصص علوم الحاسب (بمعدل 3.95/4.00)، أمتلك خبرة عملية في بناء تطبيقات ويب إنتاجية باستخدام ASP.NET Core 10 و C# و Entity Framework Core و SQL Server. أعمل حالياً على تسليم نظام تسجيل دورات مؤسسي نشط في الغرفة التجارية بينبع، مطبقاً Clean Architecture و Domain-Driven Design ونهجاً أمنياً محكماً عبر كامل المشروع. أمتلك أسساً قوية في OOP وتصميم REST API ومبادئ SOLID ومصادقة JWT.",
   email: "louialsakaf@gmail.com",
   resumeUrl: "https://drive.google.com/file/d/1dgSZOLk-pky0wqHAGJIl1amDrOkl4iF0/view?usp=sharing",
   socialLinks: [
@@ -31,15 +31,15 @@ const mockProfile = {
   experiences: [
     {
       organization: "Yanbu Chamber of Commerce",
-      role: "Co-op Trainee — IT & Software Development",
-      roleAr: "متدرب تعاوني — قسم تقنية المعلومات وتطوير البرمجيات",
+      role: "Co-op Trainee · IT & Software Development",
+      roleAr: "متدرب تعاوني · قسم تقنية المعلومات وتطوير البرمجيات",
       location: "Yanbu, Saudi Arabia",
       startDate: "2026-01-25",
       endDate: null,
       description:
-        "Sole developer on a live enterprise course registration platform replacing manual enrollment workflows at the chamber, serving Admin and Trainee roles. Architected a clean layered ASP.NET Core 10 backend (Controllers → Services → Repositories → EF Core) following SOLID principles, with interface-based dependency injection, immutable record-based DTOs, and a global exception handler returning structured ProblemDetails responses. Built the React SPA frontend with Axios API integration and role-based dashboard rendering. Implemented a complete JWT authentication lifecycle — email confirmation, password recovery, and automatic session invalidation — aligned with OWASP Top 10. Applied Domain-Driven Design with a state-machine enrollment lifecycle to enforce business rules at the domain layer.",
+        "Architecting and developing a backend course registration API using ASP.NET Core 10, designed to serve a React SPA frontend, replacing manual enrollment workflows with a centralized, role-based system serving Admins and Trainees. Built a responsive React SPA with component-based architecture, Axios HTTP client integration, and role-based UI rendering for Admin and Trainee dashboards. Designed a clean layered architecture (Controllers → Services → Repositories → EF Core) following SOLID principles, with interface-based dependency injection, immutable record-based DTOs, and a global exception handling middleware returning structured ProblemDetails responses. Built a comprehensive JWT-based authentication system covering the full identity lifecycle — token management, email confirmation, password recovery, and automatic session invalidation — following OWASP security guidelines. Applied a defense-in-depth security strategy across the application, transport, and authentication layers, aligned with OWASP Top 10 threat categories. Implemented Domain-Driven Design with rich domain models enforcing complex business invariants through a state-machine lifecycle, ensuring data consistency at the domain layer.",
       descriptionAr:
-        "توليت مسؤولية التطوير بالكامل لمنصة تسجيل دورات مؤسسية نشطة في الغرفة التجارية، مما أنهى الاعتماد على الإجراءات الورقية واليدوية السابقة، مع توفير واجهات مخصصة للمسؤولين والمتدربين. صممت البنية الخلفية بنمط Clean Architecture باستخدام ASP.NET Core 10 وفقاً لمبادئ SOLID. تضمن العمل تطبيق Dependency Injection عبر الواجهات، واستخدام DTOs مبنية على الـ Records غير القابلة للتغيير (Immutable)، ومعالج استثناءات شامل يُعيد الاستجابات بصيغة ProblemDetails القياسية. قمت ببناء الواجهة الأمامية كـ SPA باستخدام React مع الاعتماد على Axios، وتخصيص لوحات التحكم بناءً على صلاحيات المستخدم (Role-based). كما طبقت دورة حياة متكاملة للمصادقة عبر JWT تتوافق مع معايير OWASP Top 10. ولضمان دقة العمليات، طبقت مفاهيم Domain-Driven Design مع State-Machine لإدارة دورة التسجيل وفرض قواعد الأعمال بصرامة في طبقة الـ Domain.",
+        "تصميم وتطوير API تسجيل دورات خلفية باستخدام ASP.NET Core 10، مصمم لخدمة واجهة React SPA أمامية، يستبدل سير العمل اليدوي بنظام مركزي يعتمد على الأدوار ويخدم المسؤولين والمتدربين. بناء React SPA متجاوب بمعمارية مكونات، وتكامل Axios مع الـ API، وعرض واجهة مستخدم مبنية على الأدوار للوحات تحكم المسؤول والمتدرب. تصميم معمارية طبقية نظيفة (Controllers → Services → Repositories → EF Core) وفق مبادئ SOLID، مع حقن تبعيات قائم على الواجهات، وDTOs غير قابلة للتعديل مبنية على Records، ومعالج استثناءات شامل يُعيد استجابات ProblemDetails منظمة. بناء نظام مصادقة JWT شامل يغطي دورة حياة الهوية الكاملة — إدارة الرموز، تأكيد البريد الإلكتروني، استعادة كلمة المرور، وإلغاء الجلسة التلقائي — وفق إرشادات OWASP الأمنية. تطبيق استراتيجية أمان دفاع متعمق عبر طبقات التطبيق والنقل والمصادقة، متوافقة مع فئات تهديد OWASP Top 10. تطبيق Domain-Driven Design مع نماذج نطاق غنية تفرض ثوابت الأعمال المعقدة من خلال دورة حياة state-machine، مما يضمن اتساق البيانات في طبقة النطاق.",
     },
   ],
   projects: [
@@ -94,20 +94,45 @@ const mockProfile = {
       ],
     },
   ],
+
+  // Skills grouped by category — mirrors PortfolioDbSeeder.cs exactly
   skills: [
-    "C# & .NET",
-    "ASP.NET Core 10",
-    "Entity Framework Core",
-    "React & JavaScript",
-    "SQL Server & PostgreSQL",
-    "Clean Architecture",
-    "Domain-Driven Design",
-    "SOLID Principles",
-    "JWT & ASP.NET Identity",
-    "REST API Design",
-    "OWASP Top 10",
-    "Laravel & PHP",
+    // Languages
+    { name: "C#",          category: "Languages" },
+    { name: "SQL",         category: "Languages" },
+    { name: "JavaScript",  category: "Languages" },
+    { name: "HTML/CSS",    category: "Languages" },
+    { name: "Python",      category: "Languages" },
+
+    // Frameworks & Libraries
+    { name: "ASP.NET Core 10",       category: "Frameworks & Libraries" },
+    { name: "Entity Framework Core", category: "Frameworks & Libraries" },
+    { name: "React",                 category: "Frameworks & Libraries" },
+    { name: "Laravel",               category: "Frameworks & Libraries" },
+
+    // Databases
+    { name: "SQL Server", category: "Databases" },
+    { name: "PostgreSQL", category: "Databases" },
+    { name: "MySQL",      category: "Databases" },
+    { name: "SQLite",     category: "Databases" },
+
+    // Tools & Practices
+    { name: "Git",                  category: "Tools & Practices" },
+    { name: "Visual Studio",        category: "Tools & Practices" },
+    { name: "Postman",              category: "Tools & Practices" },
+    { name: "Swagger / OpenAPI",    category: "Tools & Practices" },
+    { name: "REST API Design",      category: "Tools & Practices" },
+    { name: "SOLID Principles",     category: "Tools & Practices" },
+    { name: "Dependency Injection", category: "Tools & Practices" },
+    { name: "Repository Pattern",   category: "Tools & Practices" },
+    { name: "JWT Authentication",   category: "Tools & Practices" },
+    { name: "ASP.NET Identity",     category: "Tools & Practices" },
+    { name: "Options Pattern",      category: "Tools & Practices" },
+    { name: "OWASP Top 10",         category: "Tools & Practices" },
+    { name: "Clean Architecture",   category: "Tools & Practices" },
+    { name: "Domain-Driven Design", category: "Tools & Practices" },
   ],
+
   awards: [
     {
       title: "Jaheziyah Badge of Excellence",
@@ -135,6 +160,21 @@ const mockProfile = {
       issueDate: "2023-09-01",
       expirationDate: null,
       credentialUrl: "",
+    },
+  ],
+
+  // Education — mirrors PortfolioDbSeeder.cs Education entry
+  educations: [
+    {
+      institution: "Yanbu Industrial College",
+      degree: "B.Sc.",
+      fieldOfStudy: "Computer Science",
+      gpa: "3.95/4.00",
+      honors: "First Class Honours · All Academic Years",
+      location: "Yanbu, Saudi Arabia",
+      startDate: "2022-09-01",
+      endDate: null,
+      isExpected: true,
     },
   ],
 };

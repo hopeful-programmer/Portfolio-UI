@@ -1,4 +1,11 @@
+/**
+ * Renders a single skill pill.
+ * `skill` can be either a plain string (legacy) or a { name, category } object
+ * as returned by the updated SkillDto API shape.
+ */
 export default function SkillChip({ skill, index = 0 }) {
+  const label = typeof skill === "string" ? skill : skill?.name ?? "";
+
   return (
     <span
       className="inline-flex items-center gap-2 rounded-full
@@ -16,7 +23,7 @@ export default function SkillChip({ skill, index = 0 }) {
           transition-all duration-300"
         aria-hidden="true"
       />
-      {skill}
+      {label}
     </span>
   );
 }

@@ -4,12 +4,13 @@ import { useTheme } from "../../context/ThemeContext";
 import { Menu, X, Languages, Sun, Moon } from "lucide-react";
 
 const navLinks = [
-  { key: "nav_about", href: "#about" },
-  { key: "nav_skills", href: "#skills" },
-  { key: "nav_experience", href: "#experience" },
-  { key: "nav_awards", href: "#awards" },
+  { key: "nav_about",          href: "#about" },
+  { key: "nav_skills",         href: "#skills" },
+  { key: "nav_experience",     href: "#experience" },
+  { key: "nav_education",      href: "#education" },
+  { key: "nav_awards",         href: "#awards" },
   { key: "nav_certifications", href: "#certifications" },
-  { key: "nav_projects", href: "#projects" },
+  { key: "nav_projects",       href: "#projects" },
 ];
 
 export default function Navbar() {

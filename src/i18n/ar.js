@@ -3,6 +3,7 @@ const ar = {
   nav_about: "نبذة عني",
   nav_skills: "المهارات",
   nav_experience: "الخبرة",
+  nav_education: "التعليم",
   nav_projects: "المشاريع",
   nav_awards: "الجوائز",
   nav_certifications: "الشهادات",
@@ -17,6 +18,7 @@ const ar = {
   // Sections
   section_skills: "المهارات والخبرات",
   section_experience: "الخبرات المهنية",
+  section_education: "التعليم",
   section_projects: "المشاريع المميزة",
   section_certifications: "الشهادات والاعتمادات",
   section_awards: "الجوائز والتكريمات",

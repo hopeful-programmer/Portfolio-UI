@@ -3,6 +3,7 @@ const en = {
   nav_about: "About",
   nav_skills: "Skills",
   nav_experience: "Experience",
+  nav_education: "Education",
   nav_projects: "Projects",
   nav_awards: "Awards",
   nav_certifications: "Certifications",
@@ -17,6 +18,7 @@ const en = {
   // Sections
   section_skills: "Skills & Expertise",
   section_experience: "Professional Experience",
+  section_education: "Education",
   section_projects: "Featured Projects",
   section_certifications: "Certifications & Credentials",
   section_awards: "Awards & Honors",

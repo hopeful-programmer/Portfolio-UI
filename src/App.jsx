@@ -7,6 +7,7 @@ import mockProfile, { defaultAvatar } from "./data/mockProfile";
 const HeroSection = lazy(() => import("./components/sections/HeroSection"));
 const SkillsSection = lazy(() => import("./components/sections/SkillsSection"));
 const ExperienceSection = lazy(() => import("./components/sections/ExperienceSection"));
+const EducationSection = lazy(() => import("./components/sections/EducationSection"));
 const ProjectsSection = lazy(() => import("./components/sections/ProjectsSection"));
 const CertificationsSection = lazy(() => import("./components/sections/CertificationsSection"));
 const AwardsSection = lazy(() => import("./components/sections/AwardsSection"));
@@ -78,6 +79,7 @@ function App() {
           <HeroSection profile={profile} />
           <SkillsSection skills={profile.skills} />
           <ExperienceSection experiences={profile.experiences} />
+          <EducationSection education={profile.educations} />
           <AwardsSection awards={profile.awards} />
           <CertificationsSection certifications={profile.certifications} />
           <ProjectsSection projects={profile.projects} />
